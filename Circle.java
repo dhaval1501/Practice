@@ -1,30 +1,34 @@
 package com.company;
 
-class Circle{
- public int radius;
- Circle(){
-  System.out.println("I am non param of circle");
- }
- Circle(int r){
-  System.out.println("I am circle parameterized constructor");
-  this.radius = r;
- }
+public class Circle {
 
- public double area(){
-  return Math.PI*this.radius*this.radius;
- }
+    private int radius;
+    private int perimeter;
+    private int area;
+
+    public int getRadius() {
+        return radius;
+    }
+
+    public void setRadius(int radius) {
+        this.radius = radius;
+    }
+
+    public int getPerimeter() {
+        return perimeter;
+    }
+
+    public void setPerimeter(int perimeter) {
+        this.perimeter = perimeter;
+    }
+
+    public int getArea() {
+        return area;
+    }
+
+    public void setArea(int area) {
+        this.area = area;
+    }
+
 }
-
-class Cylinder1 extends Circle{
- public int height;
- Cylinder1(int r, int h){
-  super(r);
-  System.out.println("I am cylinder1 parameterized constructor");
-  this.height = h;
- }
- public double volume(){
-  return Math.PI*this.radius*this.radius*this.height;
- }
-}
-
 
